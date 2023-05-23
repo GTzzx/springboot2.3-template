@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      min-idle: 5
+      max-active: 10
+      max-wait: 3000
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm
+
+
+
+mybatis-plus:
+  mapper-locations: classPath*:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: false # 禁止大写变小写时自动添加下划线
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
