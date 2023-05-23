@@ -16,5 +16,5 @@
  
  # 建议
   在idea中构建
-  加载mybatiesx插件用于快速创建crud使用的建构
+  加载mybatiesx插件用于快速创建crud使用的架构
       pojo mapper service impl
